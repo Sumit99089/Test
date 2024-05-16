@@ -1,0 +1,50 @@
+.heroSection {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.heroSection_box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.heroSection_box_left {
+  padding-right: 6rem;
+}
+
+.heroSection_box_left h1 {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.heroSection_box_left p {
+  margin-top: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+@media (max-width: 500px) {
+  .heroSection {
+    width: 90%;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection_box {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .heroSection {
+    margin: 0.5rem auto;
+  }
+
+  .heroSection_box_left {
+    padding-right: 2rem;
+  }
+
+  .heroSection_box_left h1 {
+    line-height: 1;
+    font-size: 3rem;
+  }
+}
